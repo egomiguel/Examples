@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(SignalsTest VERSION 1.0.1 LANGUAGES CXX)
+add_subdirectory(Filters)
+add_executable(${PROJECT_NAME} SignalsTest.cpp)
+target_link_libraries(${PROJECT_NAME} HeartRatePPG)

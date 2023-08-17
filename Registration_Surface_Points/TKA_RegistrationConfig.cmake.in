@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+include("${CMAKE_CURRENT_LIST_DIR}/TKA_RegistrationTargets.cmake")
+
+find_package(VTK REQUIRED)
+include(${VTK_USE_FILE})
+
+check_required_components(TKA_Registration)

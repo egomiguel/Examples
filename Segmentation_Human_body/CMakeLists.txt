@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(segmentation_test VERSION 1.0.1 LANGUAGES CXX)
+add_subdirectory(segmentation_dnn)
+add_executable(${PROJECT_NAME} segmentation_test.cpp)
+target_link_libraries(${PROJECT_NAME} segmentation_body)
